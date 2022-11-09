@@ -1,4 +1,3 @@
-Anh Nguyên, [11/9/2022 4:12 PM]
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
  <HEAD>
@@ -164,8 +163,6 @@ var Particle = (function() {
       return (--t) * t * t + 1;
     }
     var size = image.width * ease(this.age / settings.
-
-Anh Nguyên, [11/9/2022 4:12 PM]
 particles.duration);
     context.globalAlpha = 1 - this.age / settings.particles.duration;
     context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
@@ -302,7 +299,6 @@ var ParticlePool = (function() {
     for (var i = 0; i < amount; i++) {
       var pos = pointOnHeart(Math.
 
-Anh Nguyên, [11/9/2022 4:12 PM]
 PI - 2 * Math.PI * Math.random());
       var dir = pos.clone().length(settings.particles.velocity);
       particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
